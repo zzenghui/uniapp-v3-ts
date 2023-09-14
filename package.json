@@ -37,7 +37,8 @@
     "tsc": "vue-tsc --noEmit --skipLibCheck",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "commitlint": "commitlint --config commitlint.config.cjs -e -V"
   },
   "lint-staged": {
     "*.{js,ts,vue}": [
@@ -66,6 +67,8 @@
     "vue-i18n": "^9.2.2"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
     "@dcloudio/types": "^3.3.3",
     "@dcloudio/uni-automator": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-3081220230802001",
@@ -82,6 +85,7 @@
     "@vue/tsconfig": "^0.4.0",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.0",
     "lint-staged": "^13.0.3",
     "miniprogram-api-typings": "^3.12.0",
     "prettier": "^2.7.1",
