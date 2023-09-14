@@ -22,6 +22,7 @@ module.exports = {
     Page: true,
     Component: true,
     AnyObject: true,
+    "process": true
   },
   parserOptions: {
     ecmaVersion: 'latest',
